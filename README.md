@@ -1,4 +1,17 @@
-# mkimg.sh #
+
+# sd-compress
+Run on a RPI, copies mounted SDCard (not the running one) and shrinks image
+
+Copied from https://github.com/zymbit/rpi-mkimg with my own customizations
+[2017-01-29 SUN 16:21]
+
+Tested and working on my RPI setups (unless the other utility that I tried).
+
+## Plans
+
+* More interactive output s that I know where I am in the process when running it.
+
+# (Old Name) mkimg.sh #
 
 This shell script creates a distributable image from a Raspberry Pi SD card.
 
@@ -42,3 +55,4 @@ Replace `<device>` with the location of your SD card; e.g. `/dev/rdisk1`:
 ```
 unzip -p sdcard.img.zip | sudo dd bs=1m of=<device>
 ```
+=======
